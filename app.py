@@ -9,7 +9,7 @@ app = FastAPI(title="Text Summarizer API", version="1.0.0")
 
 # Configuration via environment with sensible defaults
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api/generate")
-MODEL_NAME = os.getenv("MODEL_NAME", "mistral:latest")
+MODEL_NAME = os.getenv("MODEL_NAME", "YOUR_OLLAMA_MODEL_HERE")
 TIMEOUT_SECONDS = float(os.getenv("HTTP_TIMEOUT", "60"))
 
 # Enable CORS for local development and broader use. Adjust origins as needed.

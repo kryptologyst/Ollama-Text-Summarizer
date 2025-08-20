@@ -4,12 +4,12 @@ import gradio as gr
 
 # Configurable via environment variables
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api/generate")
-MODEL_NAME = os.getenv("MODEL_NAME", "INSERT YOUR MODEL NAME HERE")
+MODEL_NAME = os.getenv("MODEL_NAME", "YOUR_OLLAMA_MODEL_HERE")
 HTTP_TIMEOUT = float(os.getenv("HTTP_TIMEOUT", "60"))
 
 
 def summarize_text(text: str, bullets: int = 3) -> str:
-    """Call the Ollama endpoint to summarize text with DeepSeek.
+    """Call the Ollama endpoint to summarize text with your selected local model.
 
     Args:
         text: Input text to summarize
